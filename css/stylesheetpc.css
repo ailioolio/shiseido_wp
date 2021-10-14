@@ -1,0 +1,536 @@
+/*全体的に*/
+li{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+}
+
+
+body{
+    margin:0;
+    padding:0;
+}
+
+
+
+/*ここからheaderのcss*/
+header{
+    height:700px;
+    background-image:url(assets/header-bg.png);
+    background-size:cover;
+    margin:0;
+}
+.header-list{
+    display:flex;
+    justify-content:flex-end;
+    margin-right:70px;
+
+}
+
+.header-list li{
+    border-bottom:1px solid white;
+    margin:17px 15px;
+    font-size:16px;
+    color:white;
+    transition:0.5s;
+}
+.header-list a{
+    color:white;
+    transition:0.5s;
+}
+.header-list li:hover{
+    color:rgb(253, 175, 119);
+    border-bottom:1px solid rgb(253, 175, 119);
+    transition:0.5s;
+}
+.header-list a:hover{
+    color:rgb(253, 175, 119);
+    transition:0.5s;
+}
+.mark{
+    display:block;
+    width:240px;
+    padding-top:25px;
+    margin:0 auto;
+}
+h1{
+    text-align:center;
+    margin:0;
+}
+.logo-white{
+    width:300px;
+    fill:white;
+}
+.navi {
+    display:flex;
+    justify-content:center;
+    width:875px;
+    padding:5px 0px;
+    border-top:1px solid white;
+    border-bottom:1px solid white;
+    margin:0 auto;
+
+}
+
+.navi a{
+    text-decoration:none;
+    color:white;
+    margin:0 25px;
+    transition:0.5s;
+}
+.navi a:hover{
+    opacity:0.5;
+    transition: 0.5s;
+}
+
+.main-top{
+    /*height指定する？*/
+    background-color:rgb(236, 232, 227);
+    font-family:;
+    text-align:center;
+}
+
+/*白いののうえのメニューみたいなの*/
+
+/*白いしかくいところ*/
+.main-top{
+    text-align:center;
+}
+
+.news{
+    display:inline-block;
+    width:875px;
+    margin:-70px auto 0px auto;
+    background-color:rgba(255, 255, 255, 0.98);
+    font-weight:normal;
+    padding-bottom:40px;
+}
+.news ul{
+    padding:25px;
+    /*フォント細いの*/
+    font-family:;
+    text-align:left;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.news li{
+    width:50%;
+}
+.news-block:hover{
+    opacity:0.5;
+    transition:0.5s;
+}
+.news-block{
+    height:;
+    /*display:flex;使ってみたらいいかもしれない*/
+    display:flex;
+    transition:0.5s;
+}
+.news-big{
+    height:220px;
+}
+.news-small{
+    height:150px;
+}
+.pickup{
+    color:rgb(179, 132, 99);
+}
+
+.news img{
+    padding:15px;
+}
+.news-big img{
+    width:180px;
+    height:180px;
+}
+
+.news-small img{
+    width:100px;
+    height:100px;
+}
+.news-text{
+    padding:10px 5px;
+}
+
+
+
+/* ここから続きをやりましょう */
+
+.news-text h3{
+    font-size:18px;
+    position:relative;
+}
+
+.news-text p{
+    font-size:13px;
+    letter-spacing:1px;
+}
+.news-big p{
+    padding-top:30px;
+}
+.news-text time::after{
+    content:"";
+    display:block;
+    width:60px;
+    height:1px;
+    background-color:rgb(179, 132, 99);
+    position:absolute;
+    top:40px;
+}
+.news-text h3::after{
+    content:"";
+    display:block;
+    width:60px;
+    height:1px;
+    background-color:rgb(179, 132, 99);
+    position:absolute;
+    top:40px;
+}
+.news-small p{
+    padding-top:15px;
+}
+.news-small time::after{
+    width:40px;
+}
+.more{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    width:200px;
+    height:15px;
+    padding:15px;
+    color:rgb(179, 132, 99);
+    border:1px solid  rgb(179, 132, 99);
+    margin:0 auto;
+    font-size:13px;
+    font-weight:normal;
+    transition:0.5s;
+}
+.more svg{
+    fill:rgb(179, 132, 99);
+    width:22px;
+    height:20px;
+    transition:0.5s;
+    padding-right:10px;
+}
+
+.more:hover{
+    background-color:rgb(179, 132, 99);
+    color:white;
+    transition:0.5s;
+}
+.more:hover svg{
+    padding-right:0;
+    fill:white;
+    transition:0.5s;
+}
+
+.naka{
+    width:800px;
+    margin:0 auto;
+    text-align:center;
+    margin-top:30px;
+}
+.korona{
+    /*inline-blockでtext-align↑*/
+    display:block;
+    width:250px;
+    padding:2px 25px;
+    margin:40px auto;
+    font-size:13px;
+    font-weight:bold;
+    color:rgb(179, 132, 99);
+    border:1px solid  rgb(179, 132, 99);
+    transition:0.5s;
+}
+.korona:hover{
+    background-color:rgb(179, 132, 99);
+    color:white;
+    transition:0.5s;
+}
+.naka{
+    padding-bottom:50px;
+}
+.naka-img{
+    margin:40px auto;
+    padding:0;
+    width:800px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.naka-img img{
+    margin:8px 10px;
+    transition:0.5s;
+}
+.naka-img img:hover{
+    opacity:0.5;
+    transition:0.5s;
+}
+
+
+.service{
+    background-color:white;
+    padding-top:45px;
+    padding-bottom:50px;
+}
+.service h2{
+    width:300px;
+    text-align:center;
+    margin:0 auto;
+}
+.service ul{
+    padding:0px;
+}
+
+.floor{
+    display:block;
+    width:875px;
+    margin:0 auto;
+    font-size:35px;
+    font-weight:normal;
+    color:rgb(179, 132, 99);
+    display:flex;
+    align-items:center;
+    overflow:hidden;
+}
+.floor::after{
+    content:"";
+    display:block;
+    width:100%;
+    height:1px;
+    background-color:rgb(179, 132, 99);
+}
+.intro{
+    display:flex;
+    width:875px;
+    height:230px;
+    margin:10px auto;
+    padding:20px;
+}
+.intro img{
+    flex:auto;
+    width:50%;
+    height:100%;
+    padding:0 20px;
+}
+.intro div{
+    padding:0 20px;
+}
+.intro h3{
+    font-size:20px;
+    color:rgb(179, 132, 99);
+}
+.intro ul{
+    display:flex;
+    padding:0;
+}
+
+/*各階説明の色ついたリスト*/
+.intro li{
+    color:white;
+    font-size:13px;
+    padding:3px 10px;
+    margin-right:8px;
+    margin-top:-20px;
+    height:16px;
+
+}
+.lesson{
+    background-color:rgb(120, 170, 120);
+}
+.counseling{
+    background-color:rgb(226, 164, 174);
+}
+.event{
+    background-color:rgb(151, 151, 151);
+}
+.shopping{
+    background-color:rgb(145, 176, 216);
+}
+.cafe{
+    background-color:rgb(233, 226, 135);
+}
+.hair{
+    background-color:rgb(184, 110, 184);
+}
+.photo{
+    background-color:rgb(126, 130, 187);
+}
+.esthetic{
+    background-color:rgb(177, 128, 96);
+}
+/*色のついたリストここまで*/
+
+.intro-text{
+    font-size:13px;
+}
+
+/*詳しく見るのところ*/
+.intro-detail{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    color:rgb(179, 132, 99);
+    border:1px solid  rgb(179, 132, 99);
+    margin:0 auto;
+    padding:0 20px;
+    font-size:13px;
+    font-weight:normal;
+    transition:0.5s;
+}
+.intro-detail svg{
+    fill:rgb(179, 132, 99);
+    width:22px;
+    height:20px;
+    transition:0.5s;
+    padding-right:10px;
+}
+
+.intro-detail:hover{
+    background-color:rgb(179, 132, 99);
+    color:white;
+    transition:0.5s;
+}
+.intro-detail:hover svg{
+    padding-right:0;
+    fill:white;
+    transition:0.5s;
+}
+/*詳しく見るのところここまで*/
+
+footer{
+    background-color:gray;
+    position:relative;
+    font-size:12px;
+}
+
+
+.follow{
+    display:flex;
+    align-items:center;
+    margin:0px 40px;
+    position:relative;
+    height:80px;
+
+}
+
+.follow::after{
+    content:"";
+    display:block;
+    width:100%;
+    height:1px;
+    background-color:white;
+    position:absolute;
+    top:80px;
+}
+.follow ul{
+    display:flex;
+}
+
+.f-ttl{
+    fill:white;
+    width:80px;
+    height:30px;
+}
+.snsicon{
+    width:30px;
+    height:30px;
+    fill:white;
+    transition:0.5s;
+    margin:0 10px;
+}
+.snsicon:hover{
+    opacity:0.5;
+    transition:0.5s;
+}
+
+.language{
+    display:flex;
+    height:80px;
+    padding: 0 40px;
+    fill:white;
+    align-items:center;
+}
+.language ul{
+    display:flex;
+}
+.language-l li{
+    padding:5px 15px;
+    margin:1px;
+    background-color:rgba(255, 255, 255, 0.3);
+    transition:0.5s;
+}
+.language-l li:hover{
+    background-color:rgba(255, 255, 255, 0.5);
+    transition:0.5s;
+}
+.language-r{
+    position:absolute;
+    right:40px;
+}
+.language-r li{
+    color:white;
+    padding:15px;
+    transition:0.5s;
+}
+.language-r li:hover{
+    opacity:0.5;
+    transition:0.5s;
+}
+
+.gotop{
+    width:100px;
+    fill:rgba(179, 132, 99, 0.3);
+    stroke:rgb(179, 132, 99);
+    stroke-width:4px;
+    position:relative;
+    position:absolute;
+    top:-40px;
+    right:40px;
+    transition:0.5s;
+}
+.gotop:hover{
+    fill:rgb(179, 132, 99);
+    transition:0.5s;
+}
+.gotop svg{
+    width:100px;
+    height:100px;
+}
+.gotop img{
+    width:30px;
+    height:30px;
+    position:absolute;
+    left:35px;
+    top:35px;
+}
+
+.footer-white{
+    background-color:white;
+    fill:red;
+    font-size:1px;
+    display:flex;
+    align-items:center;
+    padding:0 40px;
+}
+.footer-white svg{
+    width:120px;
+    height:50px;
+}
+.footer-white a{
+    padding:0 20px;
+    color:gray;
+    transition:0.5s;
+}
+.footer-white a:hover{
+    opacity:0.5;
+    transition:0.5s;
+}
+
+
+.happy-set{
+    display:none;
+}

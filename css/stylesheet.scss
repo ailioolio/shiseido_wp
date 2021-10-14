@@ -1,0 +1,694 @@
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  &:visited {
+    color: inherit;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+$gold: rgb(179, 132, 99);
+$main-width: 875px;
+
+/*ここからheaderのcss*/
+header {
+  height: 700px;
+  background-image: url(../assets/header-bg.png);
+  background-size: cover;
+  margin: 0;
+  .header-list {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 70px;
+    margin-top: 0;
+    li {
+      border-bottom: 1px solid white;
+      margin: 17px 15px;
+      font-size: 16px;
+      color: white;
+      transition: 0.5s;
+      &:hover {
+        color: $gold;
+        border-bottom: 1px solid $gold;
+      }
+    }
+    a {
+      color: white;
+      transition: 0.5s;
+      &:hover {
+        color: $gold;
+      }
+    }
+  } //.hrsfrt-list
+  .mark {
+    display: block;
+    width: 240px;
+    padding-top: 25px;
+    margin: 0 auto;
+  }
+  h1 {
+    text-align: center;
+    margin: 0;
+    .logo-white {
+      width: 300px;
+      fill: white;
+    }
+  }
+  .navi {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 875px;
+    padding: 5px 0px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    margin: 0 auto;
+    a {
+      text-decoration: none;
+      color: white;
+      //margin:0 25px;
+      transition: 0.5s;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+} //header
+
+// mainここから
+
+.main-top {
+  text-align: center;
+  background-color: rgb(236, 232, 227);
+  padding-bottom: 30px;
+  .news {
+    display: inline-block;
+    width: $main-width;
+    margin: -70px auto 0px;
+    background-color: rgba(255, 255, 255, 0.98);
+    font-weight: normal;
+    padding-bottom: 40px;
+    ul {
+      padding: 25px;
+      text-align: left;
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        width: 50%;
+      }
+    }
+    .news-block {
+      display: flex;
+      transition: 0.5s;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+    .news-big {
+      height: 220px;
+      img {
+        width: 180px;
+        height: 180px;
+        p {
+          padding: 30px;
+        }
+        h3 {
+          &::after {
+            width: 60px;
+          }
+        }
+      }
+    }
+    .news-small {
+      height: 150px;
+      img {
+        width: 100px;
+        height: 100px;
+      }
+      p {
+        padding-top: 15px;
+      }
+      h3 {
+        &::after {
+          width: 40px;
+        }
+      }
+    }
+    .pickup {
+      color: $gold;
+    }
+    img {
+      padding: 15px;
+    }
+    .news-text {
+      padding: 10px 5px;
+      h3 {
+        font-size: 18px;
+        position: relative;
+        &::after {
+          content: "";
+          display: block;
+          width: 60px;
+          height: 1px;
+          background-color: $gold;
+          position: absolute;
+          top: 40px;
+        }
+      }
+      p {
+        font-size: 13px;
+        letter-spacing: 1px;
+      }
+    }
+    .more {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 200px;
+      height: 15px;
+      padding: 15px;
+      color: $gold;
+      border: 1px solid $gold;
+      margin: 0 auto;
+      font-size: 13px;
+      font-weight: normal;
+      transition: 0.5s;
+      svg {
+        fill: $gold;
+        width: 22px;
+        height: 20px;
+        transition: 0.5s;
+        padding-right: 10px;
+      }
+      &:hover {
+        background-color: $gold;
+        color: white;
+        svg {
+          padding-right: 0;
+          fill: white;
+        }
+      }
+    }
+  }
+  .korona {
+    display: block;
+    width: 250px;
+    padding: 2px 25px;
+    margin: 40px auto;
+    font-size: 13px;
+    font-weight: bold;
+    color: $gold;
+    border: 1px solid $gold;
+    transition: 0.5s;
+    &:hover {
+      background-color: $gold;
+      color: white;
+    }
+  }
+  .naka-img {
+    margin: 40px auto;
+    padding: 0;
+    width: $main-width;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    img {
+      margin: 8px 10px;
+      transition: 0.5s;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+.service {
+  background-color: white;
+  padding-top: 45px;
+  padding-bottom: 50px;
+  h2 {
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  ul {
+    padding: 0px;
+  }
+  .floor {
+    display: block;
+    width: $main-width;
+    margin: 0 auto;
+    font-size: 35px;
+    font-weight: normal;
+    color: $gold;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: $gold;
+    }
+  }
+
+  .floor-li {
+    width: $main-width;
+    margin: 0 auto;
+  }
+  //ここ変えますよhtmlわすれないでね！
+  .intro {
+    height: 230px;
+    margin: 10px auto;
+    padding-left: 450px;
+    position: relative;
+    img {
+      width: 400px;
+      height: auto;
+      padding: 0 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    h3 {
+      font-size: 20px;
+      color: $gold;
+    }
+    ul {
+      display: flex;
+      padding: 0;
+      li {
+        color: white;
+        font-size: 13px;
+        padding: 3px 10px;
+        margin-right: 8px;
+        margin-top: -20px;
+        height: 16px;
+      }
+      .lesson {
+        background-color: rgb(120, 170, 120);
+      }
+      .counseling {
+        background-color: rgb(226, 164, 174);
+      }
+      .event {
+        background-color: rgb(151, 151, 151);
+      }
+      .shopping {
+        background-color: rgb(145, 176, 216);
+      }
+      .cafe {
+        background-color: rgb(233, 226, 135);
+      }
+      .hair {
+        background-color: rgb(184, 110, 184);
+      }
+      .photo {
+        background-color: rgb(126, 130, 187);
+      }
+      .esthetic {
+        background-color: rgb(177, 128, 96);
+      }
+    } //ul
+    .intro-text {
+      font-size: 13px;
+    }
+    .intro-detail {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: $gold;
+      border: 1px solid $gold;
+      margin: 0 auto;
+      padding: 0 20px;
+      font-size: 13px;
+      font-weight: normal;
+      transition: 0.5s;
+      svg {
+        fill: $gold;
+        width: 22px;
+        height: 20px;
+        transition: 0.5s;
+        padding-right: 10px;
+      }
+      &:hover {
+        background-color: $gold;
+        color: white;
+        svg {
+          padding-right: 0;
+          fill: white;
+        }
+      }
+    } //.intro-detail
+  } //.intro
+} //.service
+
+footer {
+  background-color: gray;
+  position: relative;
+  font-size: 12px;
+  .f-ttl {
+    fill: white;
+    width: 80px;
+    height: 30px;
+  }
+  .follow {
+    display: flex;
+    align-items: center;
+    margin: 0 40px;
+    position: relative;
+    height: 80px;
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: white;
+      position: absolute;
+      top: 80px;
+    }
+    ul {
+      display: flex;
+      .snsicon {
+        width: 30px;
+        height: 30px;
+        fill: white;
+        transition: 0.5s;
+        margin: 0 10px;
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    } //ul
+  } //.follow
+  .language {
+    display: flex;
+    height: 80px;
+    padding: 0 40px;
+    fill: white;
+    align-items: center;
+    ul {
+      display: flex;
+    }
+    .language-l {
+      li {
+        padding: 5px 15px;
+        margin: 1px;
+        background-color: rgba(255, 255, 255, 0.3);
+        transition: 0.5s;
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.5);
+        }
+      }
+    }
+    .language-r {
+      position: absolute;
+      right: 40px;
+      li {
+        color: white;
+        padding: 15px;
+        transition: 0.5s;
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  } //.language
+  .gotop {
+    width: 100px;
+    fill: rgba(179, 132, 99, 0.3);
+    stroke: $gold;
+    stroke-width: 4px;
+    position: absolute;
+    top: -40px;
+    right: 40px;
+    transition: 0.5s;
+    svg {
+      width: 100px;
+      height: 100px;
+    }
+    &:hover {
+      fill: $gold;
+    }
+    img {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      left: 35px;
+      top: 35px;
+    }
+  } //.gotop
+  .footer-white {
+    background-color: white;
+    font-size: 1px;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    svg {
+      fill: red;
+      width: 120px;
+      height: 50px;
+    }
+    a {
+      padding: 0 20px;
+      color: gray;
+      transition: 0.5s;
+      &:hover {
+        opacity: 0.5s;
+      }
+    }
+  } //.footer-white
+} //footer
+
+.happy-set {
+  display: none;
+}
+
+//0~320pxのレスポンシブ
+@media screen and (max-width: 320px) {
+  //ここ812pxにしてください！！！！！ {
+  $sp-width: 90%;
+  header {
+    height: 550px;
+    .mark {
+      width: 170px;
+    }
+    h1 {
+      .logo-white {
+        width: 180px;
+        height: 60px;
+      }
+    }
+    .navi {
+      width: $sp-width;
+      font-size: 13px;
+      position: relative;
+      li {
+        padding: 5px 0;
+      }
+      &::before {
+        content: "";
+        height: 1px;
+        width: 100%;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+      }
+    }
+  } //header
+
+  .main-top {
+    padding-bottom: 20px;
+    .news {
+      width: $sp-width;
+      margin-top: -30px;
+      ul {
+        padding: 10px;
+        li {
+          width: 100%;
+          h3 {
+            margin-top: 0;
+          }
+        }
+      }
+      .news-big {
+        height: auto;
+        img {
+          padding: 0;
+          width: 100px;
+          height: 100px;
+        }
+        h3 {
+          font-size: 15px;
+          &::after {
+            top: 25px;
+          }
+        }
+      }
+      .news-small {
+        height: auto;
+        img {
+          padding: 0;
+          width: 70px;
+          height: 70px;
+        }
+        h3 {
+          font-size: 13px;
+        }
+      }
+    } //.news
+    .korona {
+      width: 190px;
+      padding: 2px 15px;
+    }
+    .naka-img {
+      width: $sp-width;
+      img {
+        width: $sp-width;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  } //.main-top
+
+  .service {
+    .floor {
+      width: $sp-width;
+    }
+    .floor-li {
+      width: $sp-width;
+      .intro {
+        padding: 0;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        h3 {
+          font-size: 15px;
+          flex: 0 0 100%;
+        }
+        ul {
+          height: 0;
+          padding: 10px 0 5px;
+          width: 100%;
+          li {
+            font-size: 10px;
+            padding: 3px 5px;
+          }
+        }
+        img {
+          position: static;
+          width: 45%;
+          height: 100%;
+          padding: 5px;
+        }
+        .intro-text {
+          display: inline;
+          width: 50%;
+          font-size: 10px;
+          line-height: 2;
+          letter-spacing: 1px;
+        }
+        .intro-detail {
+          width: 200px;
+        }
+      } //.intro
+    } //.floor-li
+  } //.service
+
+  footer {
+    text-align: center;
+    .f-ttl {
+      width: 90px;
+      height: 30px;
+    }
+    .follow {
+      display: block;
+      height: auto;
+      padding: 30px 0;
+      &::after {
+        position: static;
+      }
+      ul {
+        padding: 0;
+        justify-content: center;
+      }
+    }
+    .language {
+      display: block;
+      height: 200px;
+      ul {
+        padding: 0;
+        justify-content: center;
+      }
+      .language-l {
+        position: relative;
+        &::after {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 1px;
+          background-color: white;
+          position: absolute;
+          top: 40px;
+        }
+      }
+      .language-r {
+        position: static;
+      }
+    }
+    .gotop {
+      width: 50px;
+      top: -20px;
+      right: 20px;
+      svg {
+        width: 50px;
+        height: 50px;
+      }
+      img {
+        width: 16px;
+        height: 16px;
+        left: 17px;
+        top: 17px;
+      }
+    }
+  }
+} //320px
+
+.z {
+  display: flex;
+  width: 600px;
+  div {
+    width: 300px;
+  }
+  .a {
+    background-color: black;
+    // width:100px;
+    height: 50px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    // flex-basis: auto;
+  }
+  .b {
+    background-color: blue;
+    // width:100px;
+    height: 50px;
+    flex-grow: 0;
+    flex-shrink: 2;
+    // flex-basis: auto;
+  }
+  .c {
+    background-color: red;
+    // width:100px;
+    height: 50px;
+    flex-grow: 0;
+    flex-shrink: 2;
+    // flex-basis: auto;
+  }
+}

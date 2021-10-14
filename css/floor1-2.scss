@@ -1,0 +1,537 @@
+li{
+  list-style:none;
+}
+a{
+  text-decoration: none;
+  transition:0.5s;
+  &:hover{
+    opacity:0.5;
+  }
+}
+ul{
+  padding:0px;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background-color:rgb(241, 241, 241);
+    font-family:"Yu Gothic";
+}
+
+
+/*変数*/
+$gold:rgb(179, 132, 99);
+$main-width:950px;
+
+.section-h{
+  h2{
+    font-size:30px;
+    color:$gold;
+    text-align:center;
+    small{
+      font-size:20px;
+    }
+  }
+}
+
+
+
+/*header*/
+header{
+  h1{
+    fill:black;
+    svg{
+      display:block;
+      margin:0 auto;
+      width:200px;
+      height:80px;
+    }
+  }
+  ul{
+    display:flex;
+    position:absolute;
+    top:10px;
+    right:40px;
+
+    li{
+      border-bottom:1px solid black;
+      margin:17px 15px;
+      font-size:16px;
+      transition:0.5s;
+      a{
+        color:black;
+        transition:0.5s;
+      }
+      &:hover{
+        border-bottom:1px solid $gold;
+        transition:0.5s;
+        a{
+          color:$gold;
+          transition:0.5s;
+        }
+      }
+    }
+  }
+}
+
+
+//ここからmain
+.top{
+  background-color:rgba(179, 132, 99,0.3);
+  ul{
+    width:900px;
+    margin:0 auto;
+    display:flex;
+
+    li{
+      font-size:12px;
+      padding:5px;
+      a{
+        color:black;
+      }
+    }
+    li:not(:last-child):after{
+      content:">";
+    }
+    li:last-child{
+      pointer-events:none;
+    }
+  }
+}
+
+section{
+  width:$main-width;
+  margin:0 auto;
+  @extend .section-h;
+  .floor-icon{
+    color:$gold;
+    font-size:20px;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    svg{
+      fill:$gold;
+      width:40px;
+      height:60px;
+    }
+  }
+  img{
+    display:block;
+  }
+  .img-big{
+    width:$main-width;
+  }
+
+}
+.tag-list{
+  display:flex;
+  justify-content: center;
+  color:white;
+  font-size:12px;
+  font-weight:500;
+  li{
+    padding:2px 10px;
+    margin:0 5px;
+  }
+  .shopping{
+    background-color:rgb(145, 176, 216);
+  }
+  .counseling{
+    background-color:rgb(226, 164, 174);
+  }
+}
+
+
+.sec-text{
+  text-align:center;
+}
+
+.BEAUTYSQUARE{
+  position:relative;
+  .floor-icon{
+    position:absolute;
+    top:0;
+    right:0;
+  }
+  .info{
+    border-top:1px solid $gold;
+    border-bottom:1px solid $gold;
+    ul{
+      padding:5px;
+      li{
+        padding:10px 0;
+        time{
+          font-size:20px;
+          font-weight:500;
+          padding:0 30px;
+          position:relative;
+          &::after{
+            content:"";
+            width:1px;
+            height:18px;
+            background-color:$gold;
+            position:absolute;
+            top:4px;
+            right:0;
+          }
+        }
+        a{
+          font-size:14px;
+          padding:0 30px;
+        }
+      }
+    }
+    div{
+      display:flex;
+      justify-content: flex-end;
+      p{
+        color:$gold;
+        font-size:15px;
+        margin:0;
+      }
+      svg{
+        fill:$gold;
+        width:15px;
+        height:24px;
+      }
+    }
+  }
+  img{
+    margin:40px auto;
+  }
+}
+
+.BEAUTYSQUARE2{
+  position:relative;
+  .floor-icon{
+    position:absolute;
+    top:0;
+    right:0;
+  }
+}
+
+.BEAUTYSQUARE1{
+  position:relative;
+  .floor-icon{
+    position:absolute;
+    top:0;
+    right:0;
+  }
+}
+
+
+
+.FAQ{
+  h3{
+    color:$gold;
+    font-size:20px;
+    text-align:center;
+  }
+}
+
+.question{
+  li{
+    border-top:1px solid $gold;
+    &:last-child{
+      border-bottom:1px solid $gold;
+    }
+    p{
+      color:black;
+      position:relative;
+      padding:20px 30px;
+      &::before{
+        content:"Q";
+        font-size:30px;
+        color:$gold;
+        position:absolute;
+        left:0;
+        top:10px;
+      }
+      &::after{
+        content:"＋";
+        color:$gold;
+        font-size:30px;
+        position:absolute;
+        right:0;
+        top:10px;
+      }
+    }
+  }
+}
+
+.bland{
+  li{
+    border-top:1px solid $gold;
+    border-bottom:1px solid $gold;
+    p{
+      color:black;
+      position:relative;
+      padding:20px 30px;
+      &::after{
+        content:"＋";
+        color:$gold;
+        font-size:30px;
+        position:absolute;
+        right:0;
+        top:10px;
+      }
+    }
+  }
+}
+
+
+
+.sonota{
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  width:200px;
+  height:15px;
+  padding:15px;
+  color:$gold;
+  border:1px solid $gold;
+  margin:30px auto 40px;
+  font-size:13px;
+  font-weight:normal;
+  transition:0.5s;
+  svg{
+    fill:$gold;
+    width:22px;
+    height:20px;
+    transition:0.5s;
+    padding-right:10px;
+  }
+  &:hover{
+    background-color:$gold;
+    color:white;
+    svg{
+      padding-right:0;
+      fill:white;
+    }
+  }
+}
+
+
+
+
+
+//recomend
+.recommend{
+  padding:30px;
+  background-color:rgb(61, 61, 61);
+  h2{
+    background-color:rgb(61, 61, 61);
+    color:$gold;
+    text-align:center;
+  }
+  .rec{
+    width:$main-width;
+    margin:0 auto;
+    border-top:1px solid $gold;
+    border-bottom:1px solid $gold;
+    /*フォント細いの*/
+    text-align:left;
+    display:flex;
+    flex-wrap:wrap;
+    li{
+      width:50%;
+      .rec-block{
+        display:flex;
+        transition:0.5s;
+        margin:30px 0;
+        &:hover{
+          opacity:0.5;
+          transition:0.5s;
+        }
+        img{
+          width:180px;
+          height:180px;
+        }
+        .rec-text{
+          padding:10px 15px;
+          font-size:13px;
+          letter-spacing:1px;
+          h3{
+            font-size:18px;
+            position:relative;
+            color:white;
+            &::after{
+              content:"";
+              display:block;
+              width:60px;
+              height:1px;
+              background-color:$gold;
+              position:absolute;
+              top:40px;
+            }
+          }
+          p{
+            padding-top:15px;
+            color:white;
+          }
+        }
+      }
+    }
+  }
+  aside{
+    ul{
+      padding:50px 40px;
+      margin:0;
+      display:flex;
+      justify-content:center;
+      li{
+        margin-right:35px;
+        transition:0.5s;
+        a{
+          color:white;
+          text-decoration:underline;
+          display:flex;
+          &::before{
+            content: "#";
+            color:white;
+          }
+        }
+        &:hover{
+          opacity:0.5;
+        }
+      }
+    }
+  }
+}
+
+
+//ここからfooter
+footer{
+  background-color:gray;
+  position:relative;
+  font-size:12px;
+}
+.follow{
+  display:flex;
+  align-items:center;
+  margin:0px 40px;
+  position:relative;
+  height:80px;
+  &::after{
+    content:"";
+  display:block;
+  width:100%;
+  height:1px;
+  background-color:white;
+  position:absolute;
+  top:80px;
+  }
+  ul{
+    display:flex;
+  }
+}
+
+.f-ttl{
+  fill:white;
+  width:80px;
+  height:30px;
+}
+
+.snsicon{
+  width:30px;
+  height:30px;
+  fill:white;
+  transition:0.5s;
+  margin:0 10px;
+  &:hover{
+    opacity:0.5;
+    transition:0.5s;
+  }
+}
+
+.language{
+  display:flex;
+  height:80px;
+  padding: 0 40px;
+  fill:white;
+  align-items:center;
+  ul{
+    display:flex;
+  }
+}
+
+.language-l li{
+  padding:5px 15px;
+  margin:1px;
+  background-color:rgba(255, 255, 255, 0.3);
+  transition:0.5s;
+  &:hover{
+    background-color:rgba(255, 255, 255, 0.5);
+    transition:0.5s;
+  }
+}
+
+.language-r{
+  position:absolute;
+  right:40px;
+  li{
+    color:white;
+    padding:15px;
+    transition:0.5s;
+    &:hover{
+      opacity:0.5;
+      transition:0.5s;
+    }
+  }
+}
+
+.gotop{
+  width:100px;
+  fill:rgba(179, 132, 99, 0.3);
+  stroke:rgb(179, 132, 99);
+  stroke-width:4px;
+  position:relative;
+  position:absolute;
+  top:-40px;;
+  right:40px;
+  transition:0.5s;
+  &:hover{
+    fill:rgb(179, 132, 99);
+    transition:0.5s;
+  }
+  svg{
+    width:100px;
+    height:100px;
+  }
+  img{
+    width:30px;
+    height:30px;
+    position:absolute;
+    left:35px;
+    top:35px;
+  }
+}
+
+.footer-white{
+  background-color:white;
+  fill:red;
+  font-size:1px;
+  display:flex;
+  align-items:center;
+  padding:0 40px;
+  svg{
+    width:120px;
+    height:50px;
+  }
+  a{
+    padding:0 20px;
+    color:gray;
+    transition:0.5s;
+    &:hover{
+      opacity:0.5s;
+      transition:0.5s;
+    }
+  }
+}
+
+
+
+.happy-set{
+  display:none;
+}

@@ -1,0 +1,645 @@
+@charset "UTF-8";
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+ul {
+  padding: 0px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
+  font-family: "Yu Gothic";
+}
+
+/*変数*/
+.section-h h2, section h2 {
+  font-size: 30px;
+  color: #b38463;
+  text-align: center;
+}
+
+.section-h h2 small, section h2 small {
+  font-size: 20px;
+}
+
+/*header*/
+header h1 {
+  fill: black;
+}
+
+header h1 svg {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 80px;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 10px;
+  right: 40px;
+}
+
+header ul li {
+  border-bottom: 1px solid black;
+  margin: 17px 15px;
+  font-size: 16px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header ul li a {
+  color: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header ul li:hover {
+  border-bottom: 1px solid #b38463;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header ul li:hover a {
+  color: #b38463;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.top {
+  background-color: rgba(179, 132, 99, 0.3);
+}
+
+.top ul {
+  width: 900px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.top ul li {
+  font-size: 12px;
+  padding: 5px;
+}
+
+.top ul li a {
+  color: black;
+}
+
+.top ul li:not(:last-child):after {
+  content: ">";
+}
+
+.top ul li:last-child {
+  pointer-events: none;
+}
+
+section {
+  width: 950px;
+  margin: 0 auto;
+}
+
+section .floor-icon {
+  color: #b38463;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+section .floor-icon svg {
+  fill: #b38463;
+  width: 40px;
+  height: 60px;
+}
+
+section img {
+  display: block;
+}
+
+section .img-big {
+  width: 950px;
+}
+
+.tag-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.tag-list li {
+  padding: 2px 10px;
+  margin: 0 5px;
+}
+
+.tag-list .shopping {
+  background-color: #91b0d8;
+}
+
+.tag-list .counseling {
+  background-color: #e2a4ae;
+}
+
+.sec-text {
+  text-align: center;
+}
+
+.BEAUTYSQUARE {
+  position: relative;
+}
+
+.BEAUTYSQUARE .floor-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.BEAUTYSQUARE .info {
+  border-top: 1px solid #b38463;
+  border-bottom: 1px solid #b38463;
+}
+
+.BEAUTYSQUARE .info ul {
+  padding: 5px;
+}
+
+.BEAUTYSQUARE .info ul li {
+  padding: 10px 0;
+}
+
+.BEAUTYSQUARE .info ul li time {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 30px;
+  position: relative;
+}
+
+.BEAUTYSQUARE .info ul li time::after {
+  content: "";
+  width: 1px;
+  height: 18px;
+  background-color: #b38463;
+  position: absolute;
+  top: 4px;
+  right: 0;
+}
+
+.BEAUTYSQUARE .info ul li a {
+  font-size: 14px;
+  padding: 0 30px;
+}
+
+.BEAUTYSQUARE .info div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.BEAUTYSQUARE .info div p {
+  color: #b38463;
+  font-size: 15px;
+  margin: 0;
+}
+
+.BEAUTYSQUARE .info div svg {
+  fill: #b38463;
+  width: 15px;
+  height: 24px;
+}
+
+.BEAUTYSQUARE img {
+  margin: 40px auto;
+}
+
+.BEAUTYSQUARE2 {
+  position: relative;
+}
+
+.BEAUTYSQUARE2 .floor-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.BEAUTYSQUARE1 {
+  position: relative;
+}
+
+.BEAUTYSQUARE1 .floor-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.FAQ h3 {
+  color: #b38463;
+  font-size: 20px;
+  text-align: center;
+}
+
+.question li {
+  border-top: 1px solid #b38463;
+}
+
+.question li:last-child {
+  border-bottom: 1px solid #b38463;
+}
+
+.question li p {
+  color: black;
+  position: relative;
+  padding: 20px 30px;
+}
+
+.question li p::before {
+  content: "Q";
+  font-size: 30px;
+  color: #b38463;
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+
+.question li p::after {
+  content: "＋";
+  color: #b38463;
+  font-size: 30px;
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+
+.bland li {
+  border-top: 1px solid #b38463;
+  border-bottom: 1px solid #b38463;
+}
+
+.bland li p {
+  color: black;
+  position: relative;
+  padding: 20px 30px;
+}
+
+.bland li p::after {
+  content: "＋";
+  color: #b38463;
+  font-size: 30px;
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+
+.sonota {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  height: 15px;
+  padding: 15px;
+  color: #b38463;
+  border: 1px solid #b38463;
+  margin: 30px auto 40px;
+  font-size: 13px;
+  font-weight: normal;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.sonota svg {
+  fill: #b38463;
+  width: 22px;
+  height: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-right: 10px;
+}
+
+.sonota:hover {
+  background-color: #b38463;
+  color: white;
+}
+
+.sonota:hover svg {
+  padding-right: 0;
+  fill: white;
+}
+
+.recommend {
+  padding: 30px;
+  background-color: #3d3d3d;
+}
+
+.recommend h2 {
+  background-color: #3d3d3d;
+  color: #b38463;
+  text-align: center;
+}
+
+.recommend .rec {
+  width: 950px;
+  margin: 0 auto;
+  border-top: 1px solid #b38463;
+  border-bottom: 1px solid #b38463;
+  /*フォント細いの*/
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.recommend .rec li {
+  width: 50%;
+}
+
+.recommend .rec li .rec-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin: 30px 0;
+}
+
+.recommend .rec li .rec-block:hover {
+  opacity: 0.5;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.recommend .rec li .rec-block img {
+  width: 180px;
+  height: 180px;
+}
+
+.recommend .rec li .rec-block .rec-text {
+  padding: 10px 15px;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.recommend .rec li .rec-block .rec-text h3 {
+  font-size: 18px;
+  position: relative;
+  color: white;
+}
+
+.recommend .rec li .rec-block .rec-text h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: #b38463;
+  position: absolute;
+  top: 40px;
+}
+
+.recommend .rec li .rec-block .rec-text p {
+  padding-top: 15px;
+  color: white;
+}
+
+.recommend aside ul {
+  padding: 50px 40px;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.recommend aside ul li {
+  margin-right: 35px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.recommend aside ul li a {
+  color: white;
+  text-decoration: underline;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.recommend aside ul li a::before {
+  content: "#";
+  color: white;
+}
+
+.recommend aside ul li:hover {
+  opacity: 0.5;
+}
+
+footer {
+  background-color: gray;
+  position: relative;
+  font-size: 12px;
+}
+
+.follow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 40px;
+  position: relative;
+  height: 80px;
+}
+
+.follow::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  top: 80px;
+}
+
+.follow ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.f-ttl {
+  fill: white;
+  width: 80px;
+  height: 30px;
+}
+
+.snsicon {
+  width: 30px;
+  height: 30px;
+  fill: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin: 0 10px;
+}
+
+.snsicon:hover {
+  opacity: 0.5;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.language {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80px;
+  padding: 0 40px;
+  fill: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.language ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.language-l li {
+  padding: 5px 15px;
+  margin: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.language-l li:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.language-r {
+  position: absolute;
+  right: 40px;
+}
+
+.language-r li {
+  color: white;
+  padding: 15px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.language-r li:hover {
+  opacity: 0.5;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.gotop {
+  width: 100px;
+  fill: rgba(179, 132, 99, 0.3);
+  stroke: #b38463;
+  stroke-width: 4px;
+  position: relative;
+  position: absolute;
+  top: -40px;
+  right: 40px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.gotop:hover {
+  fill: #b38463;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.gotop svg {
+  width: 100px;
+  height: 100px;
+}
+
+.gotop img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 35px;
+  top: 35px;
+}
+
+.footer-white {
+  background-color: white;
+  fill: red;
+  font-size: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 40px;
+}
+
+.footer-white svg {
+  width: 120px;
+  height: 50px;
+}
+
+.footer-white a {
+  padding: 0 20px;
+  color: gray;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footer-white a:hover {
+  opacity: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.happy-set {
+  display: none;
+}
+/*# sourceMappingURL=floor1-2.css.map */

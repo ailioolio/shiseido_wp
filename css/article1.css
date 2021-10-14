@@ -1,0 +1,641 @@
+@charset "UTF-8";
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
+  font-family: "Yu Gothic";
+}
+
+/*変数*/
+/*header*/
+header h1 {
+  fill: black;
+}
+
+header h1 svg {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 80px;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 10px;
+  right: 40px;
+}
+
+header ul li {
+  border-bottom: 1px solid black;
+  margin: 17px 15px;
+  font-size: 16px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header ul li a {
+  color: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header ul li:hover {
+  border-bottom: 1px solid #b38463;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header ul li:hover a {
+  color: #b38463;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/*main*/
+.top {
+  background-color: rgba(179, 132, 99, 0.3);
+}
+
+.top ul {
+  width: 900px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.top ul li {
+  font-size: 12px;
+  padding: 5px;
+}
+
+.top ul li a {
+  color: black;
+}
+
+h2 {
+  color: #b38463;
+  text-align: center;
+  background-color: white;
+  margin: 0;
+  padding: 30px 0;
+}
+
+.time {
+  display: block;
+  width: 950px;
+  margin: 50px auto 0;
+  font-size: 18px;
+  font-weight: normal;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.time::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: #b38463;
+  position: absolute;
+  top: 40px;
+}
+
+.hashtag {
+  width: 950px;
+  margin: 0 auto;
+}
+
+.hashtag ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px 0;
+}
+
+.hashtag ul li {
+  padding-right: 20px;
+}
+
+.hashtag ul li a {
+  color: #b38463;
+  font-size: 15px;
+  text-decoration: underline;
+}
+
+.hashtag ul li a:hover {
+  opacity: 0.1;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+/*article記事*/
+.main-art {
+  width: 950px;
+  margin: 0 auto;
+}
+
+.main-art h3 {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.main-art figure {
+  margin: 0;
+}
+
+.main-art img {
+  margin: 30px 0;
+  width: 950px;
+  height: auto;
+}
+
+.main-art p {
+  letter-spacing: 2px;
+  font-size: 15px;
+  line-height: 200%;
+}
+
+.main-art .article-txt {
+  margin-bottom: 40px;
+}
+
+.main-art aside p {
+  font-size: 12px;
+}
+
+.main-art .price {
+  height: 60px;
+  line-height: 60px;
+  position: relative;
+}
+
+.main-art .price::after {
+  content: "";
+  display: block;
+  width: 400px;
+  height: 60px;
+  border-top: 1px dashed black;
+  border-bottom: 1px dashed black;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.share {
+  width: 950px;
+  padding: 40px 0;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  fill: #b38463;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  border-top: 1px solid #b38463;
+}
+
+.share svg {
+  width: 60px;
+  height: 40px;
+}
+
+.share ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px;
+}
+
+.share ul li {
+  padding: 10px;
+}
+
+.share ul li a svg {
+  fill: #b38463;
+  width: 40px;
+  height: 40px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.share ul li a svg:hover {
+  opacity: 0.5;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/*トップへ戻る忘れない*/
+.gotop2 {
+  text-align: center;
+  width: 600px;
+  margin: 50px auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  border: 1px solid #b38463;
+  font-size: 15px;
+  color: #b38463;
+}
+
+.gotop2 svg {
+  fill: #b38463;
+  width: 30px;
+  height: 45px;
+  position: absolute;
+  top: auto;
+  left: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.gotop2:hover {
+  background-color: #b38463;
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.gotop2:hover svg {
+  fill: white;
+  position: absolute;
+  left: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.news {
+  display: block;
+  width: 950px;
+  padding: 30px 0;
+  margin: 0 auto 60px auto;
+  background-color: rgba(255, 255, 255, 0.98);
+  font-weight: normal;
+}
+
+.news h2 {
+  padding: 0;
+}
+
+.news ul {
+  padding: 25px;
+  /*フォント細いの*/
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+}
+
+.news ul li {
+  width: 50%;
+}
+
+.news ul li .news-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.news ul li .news-block:hover {
+  opacity: 0.5;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.news ul li .news-block img {
+  padding: 15px;
+  width: 100px;
+  height: 100px;
+}
+
+.news ul li .news-block .news-text {
+  padding: 10px 5px;
+  width: 283px;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.news ul li .news-block .news-text h3 {
+  font-size: 18px;
+  position: relative;
+}
+
+.news ul li .news-block .news-text h3::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 1px;
+  background-color: #b38463;
+  position: absolute;
+  top: 40px;
+}
+
+.news ul li .news-block .news-text p {
+  padding-top: 15px;
+}
+
+.recommend {
+  padding: 30px;
+  background-color: #3d3d3d;
+}
+
+.recommend h2 {
+  background-color: #3d3d3d;
+}
+
+.recommend .rec {
+  width: 950px;
+  margin: 0 auto;
+  border-top: 1px solid #b38463;
+  border-bottom: 1px solid #b38463;
+  /*フォント細いの*/
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.recommend .rec li {
+  width: 50%;
+}
+
+.recommend .rec li .rec-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin: 30px 0;
+}
+
+.recommend .rec li .rec-block:hover {
+  opacity: 0.5;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.recommend .rec li .rec-block img {
+  width: 180px;
+  height: 180px;
+}
+
+.recommend .rec li .rec-block .rec-text {
+  padding: 10px 15px;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.recommend .rec li .rec-block .rec-text h3 {
+  font-size: 18px;
+  position: relative;
+  color: white;
+}
+
+.recommend .rec li .rec-block .rec-text h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: #b38463;
+  position: absolute;
+  top: 40px;
+}
+
+.recommend .rec li .rec-block .rec-text p {
+  padding-top: 15px;
+  color: white;
+}
+
+.recommend aside ul {
+  padding: 50px 40px;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.recommend aside ul li {
+  margin-right: 35px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.recommend aside ul li a {
+  color: white;
+  text-decoration: underline;
+}
+
+.recommend aside ul li:hover {
+  opacity: 0.5;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/*footer*/
+footer {
+  background-color: gray;
+  position: relative;
+  font-size: 12px;
+}
+
+.follow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 40px;
+  position: relative;
+  height: 80px;
+}
+
+.follow::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  top: 80px;
+}
+
+.follow ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.f-ttl {
+  fill: white;
+  width: 80px;
+  height: 30px;
+}
+
+.snsicon {
+  width: 30px;
+  height: 30px;
+  fill: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin: 0 10px;
+}
+
+.snsicon:hover {
+  opacity: 0.5;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.language {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80px;
+  padding: 0 40px;
+  fill: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.language ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.language-l li {
+  padding: 5px 15px;
+  margin: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.language-l li:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.language-r {
+  position: absolute;
+  right: 40px;
+}
+
+.language-r li {
+  color: white;
+  padding: 15px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.language-r li:hover {
+  opacity: 0.5;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.gotop {
+  width: 100px;
+  fill: rgba(179, 132, 99, 0.3);
+  stroke: #b38463;
+  stroke-width: 4px;
+  position: relative;
+  position: absolute;
+  top: -40px;
+  right: 40px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.gotop:hover {
+  fill: #b38463;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.gotop svg {
+  width: 100px;
+  height: 100px;
+}
+
+.gotop img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 35px;
+  top: 35px;
+}
+
+.footer-white {
+  background-color: white;
+  fill: red;
+  font-size: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 40px;
+}
+
+.footer-white svg {
+  width: 120px;
+  height: 50px;
+}
+
+.footer-white a {
+  padding: 0 20px;
+  color: gray;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footer-white a:hover {
+  opacity: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.happy-set {
+  display: none;
+}
+/*# sourceMappingURL=article1.css.map */

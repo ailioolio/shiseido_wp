@@ -1,0 +1,116 @@
+$gold: rgb(179, 132, 99);
+$big-width: 900px;
+$main-width: 85%;
+$sp-width: 90%;
+$sp-size: 10px;
+$size: 11px;
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  padding: 0px;
+  display: flex;
+  justify-content: space-around;
+}
+p {
+  font-size: $size;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(241, 241, 241);
+  font-family: "Yu Gothic";
+  font-size: $size;
+}
+
+h1 {
+  padding-top: 15px;
+  text-align: center;
+  svg {
+    width: 200px;
+    height: 70px;
+    fill: black;
+  }
+}
+
+.width {
+  width: 500px;
+  margin: 0 auto;
+}
+
+h2 {
+  background-color: $gold;
+  color: white;
+  margin: 0 auto;
+  width: 550px;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.subject {
+  color: $gold;
+}
+
+dl {
+  margin-top: 30px;
+}
+
+dt {
+  font-size: $size;
+  float: left;
+  padding-top: 15px;
+}
+
+dd {
+  margin-left: 100px;
+  padding: 15px 0;
+  dl {
+    margin: 0;
+  }
+}
+
+input {
+  width: 100%;
+}
+textarea {
+  width: 100%;
+  height: 30px;
+}
+.input-name {
+  width: 80px;
+}
+
+.no-margin {
+  margin-left: 0;
+}
+
+// 追加分
+.contact_up {
+  display: flex;
+  flex-wrap: wrap;
+  dt {
+    width: 20%;
+    margin: 0;
+    padding: 0;
+  }
+  dd {
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    ul {
+      margin: 0 !important;
+      gap: 50px;
+      justify-content: unset !important;
+      li {
+        display: flex;
+        gap: 10px;
+      }
+    }
+  }
+}

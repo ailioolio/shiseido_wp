@@ -1,0 +1,842 @@
+@charset "UTF-8";
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*ここからheaderのcss*/
+header {
+  height: 700px;
+  background-image: url(../assets/header-bg.png);
+  background-size: cover;
+  margin: 0;
+}
+
+header .header-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 70px;
+  margin-top: 0;
+}
+
+header .header-list li {
+  border-bottom: 1px solid white;
+  margin: 17px 15px;
+  font-size: 16px;
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header .header-list li:hover {
+  color: #b38463;
+  border-bottom: 1px solid #b38463;
+}
+
+header .header-list a {
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header .header-list a:hover {
+  color: #b38463;
+}
+
+header .mark {
+  display: block;
+  width: 240px;
+  padding-top: 25px;
+  margin: 0 auto;
+}
+
+header h1 {
+  text-align: center;
+  margin: 0;
+}
+
+header h1 .logo-white {
+  width: 300px;
+  fill: white;
+}
+
+header .navi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 875px;
+  padding: 5px 0px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  margin: 0 auto;
+}
+
+header .navi a {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header .navi a:hover {
+  opacity: 0.5;
+}
+
+.main-top {
+  text-align: center;
+  background-color: #ece8e3;
+  padding-bottom: 30px;
+}
+
+.main-top .news {
+  display: inline-block;
+  width: 875px;
+  margin: -70px auto 0px;
+  background-color: rgba(255, 255, 255, 0.98);
+  font-weight: normal;
+  padding-bottom: 40px;
+}
+
+.main-top .news ul {
+  padding: 25px;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-top .news ul li {
+  width: 50%;
+}
+
+.main-top .news .news-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main-top .news .news-block:hover {
+  opacity: 0.5;
+}
+
+.main-top .news .news-big {
+  height: 220px;
+}
+
+.main-top .news .news-big img {
+  width: 180px;
+  height: 180px;
+}
+
+.main-top .news .news-big img p {
+  padding: 30px;
+}
+
+.main-top .news .news-big img h3::after {
+  width: 60px;
+}
+
+.main-top .news .news-small {
+  height: 150px;
+}
+
+.main-top .news .news-small img {
+  width: 100px;
+  height: 100px;
+}
+
+.main-top .news .news-small p {
+  padding-top: 15px;
+}
+
+.main-top .news .news-small h3::after {
+  width: 40px;
+}
+
+.main-top .news .pickup {
+  color: #b38463;
+}
+
+.main-top .news img {
+  padding: 15px;
+}
+
+.main-top .news .news-text {
+  padding: 10px 5px;
+}
+
+.main-top .news .news-text h3 {
+  font-size: 18px;
+  position: relative;
+}
+
+.main-top .news .news-text h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: #b38463;
+  position: absolute;
+  top: 40px;
+}
+
+.main-top .news .news-text p {
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.main-top .news .more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  height: 15px;
+  padding: 15px;
+  color: #b38463;
+  border: 1px solid #b38463;
+  margin: 0 auto;
+  font-size: 13px;
+  font-weight: normal;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main-top .news .more svg {
+  fill: #b38463;
+  width: 22px;
+  height: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-right: 10px;
+}
+
+.main-top .news .more:hover {
+  background-color: #b38463;
+  color: white;
+}
+
+.main-top .news .more:hover svg {
+  padding-right: 0;
+  fill: white;
+}
+
+.main-top .korona {
+  display: block;
+  width: 250px;
+  padding: 2px 25px;
+  margin: 40px auto;
+  font-size: 13px;
+  font-weight: bold;
+  color: #b38463;
+  border: 1px solid #b38463;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main-top .korona:hover {
+  background-color: #b38463;
+  color: white;
+}
+
+.main-top .naka-img {
+  margin: 40px auto;
+  padding: 0;
+  width: 875px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-top .naka-img img {
+  margin: 8px 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main-top .naka-img img:hover {
+  opacity: 0.5;
+}
+
+.service {
+  background-color: white;
+  padding-top: 45px;
+  padding-bottom: 50px;
+}
+
+.service h2 {
+  width: 300px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.service ul {
+  padding: 0px;
+}
+
+.service .floor {
+  display: block;
+  width: 875px;
+  margin: 0 auto;
+  font-size: 35px;
+  font-weight: normal;
+  color: #b38463;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.service .floor::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #b38463;
+}
+
+.service .floor-li {
+  width: 875px;
+  margin: 0 auto;
+}
+
+.service .intro {
+  height: 230px;
+  margin: 10px auto;
+  padding-left: 450px;
+  position: relative;
+}
+
+.service .intro img {
+  width: 400px;
+  height: auto;
+  padding: 0 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.service .intro h3 {
+  font-size: 20px;
+  color: #b38463;
+}
+
+.service .intro ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+
+.service .intro ul li {
+  color: white;
+  font-size: 13px;
+  padding: 3px 10px;
+  margin-right: 8px;
+  margin-top: -20px;
+  height: 16px;
+}
+
+.service .intro ul .lesson {
+  background-color: #78aa78;
+}
+
+.service .intro ul .counseling {
+  background-color: #e2a4ae;
+}
+
+.service .intro ul .event {
+  background-color: #979797;
+}
+
+.service .intro ul .shopping {
+  background-color: #91b0d8;
+}
+
+.service .intro ul .cafe {
+  background-color: #e9e287;
+}
+
+.service .intro ul .hair {
+  background-color: #b86eb8;
+}
+
+.service .intro ul .photo {
+  background-color: #7e82bb;
+}
+
+.service .intro ul .esthetic {
+  background-color: #b18060;
+}
+
+.service .intro .intro-text {
+  font-size: 13px;
+}
+
+.service .intro .intro-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #b38463;
+  border: 1px solid #b38463;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-size: 13px;
+  font-weight: normal;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.service .intro .intro-detail svg {
+  fill: #b38463;
+  width: 22px;
+  height: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-right: 10px;
+}
+
+.service .intro .intro-detail:hover {
+  background-color: #b38463;
+  color: white;
+}
+
+.service .intro .intro-detail:hover svg {
+  padding-right: 0;
+  fill: white;
+}
+
+footer {
+  background-color: gray;
+  position: relative;
+  font-size: 12px;
+}
+
+footer .f-ttl {
+  fill: white;
+  width: 80px;
+  height: 30px;
+}
+
+footer .follow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 40px;
+  position: relative;
+  height: 80px;
+}
+
+footer .follow::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  top: 80px;
+}
+
+footer .follow ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .follow ul .snsicon {
+  width: 30px;
+  height: 30px;
+  fill: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin: 0 10px;
+}
+
+footer .follow ul .snsicon:hover {
+  opacity: 0.5;
+}
+
+footer .language {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80px;
+  padding: 0 40px;
+  fill: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .language ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .language .language-l li {
+  padding: 5px 15px;
+  margin: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+footer .language .language-l li:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+footer .language .language-r {
+  position: absolute;
+  right: 40px;
+}
+
+footer .language .language-r li {
+  color: white;
+  padding: 15px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+footer .language .language-r li:hover {
+  opacity: 0.5;
+}
+
+footer .gotop {
+  width: 100px;
+  fill: rgba(179, 132, 99, 0.3);
+  stroke: #b38463;
+  stroke-width: 4px;
+  position: absolute;
+  top: -40px;
+  right: 40px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+footer .gotop svg {
+  width: 100px;
+  height: 100px;
+}
+
+footer .gotop:hover {
+  fill: #b38463;
+}
+
+footer .gotop img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 35px;
+  top: 35px;
+}
+
+footer .footer-white {
+  background-color: white;
+  font-size: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 40px;
+}
+
+footer .footer-white svg {
+  fill: red;
+  width: 120px;
+  height: 50px;
+}
+
+footer .footer-white a {
+  padding: 0 20px;
+  color: gray;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+footer .footer-white a:hover {
+  opacity: 0.5s;
+}
+
+.happy-set {
+  display: none;
+}
+
+@media screen and (max-width: 320px) {
+  header {
+    height: 550px;
+  }
+  header .mark {
+    width: 170px;
+  }
+  header h1 .logo-white {
+    width: 180px;
+    height: 60px;
+  }
+  header .navi {
+    width: 90%;
+    font-size: 13px;
+    position: relative;
+  }
+  header .navi li {
+    padding: 5px 0;
+  }
+  header .navi::before {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+  }
+  .main-top {
+    padding-bottom: 20px;
+  }
+  .main-top .news {
+    width: 90%;
+    margin-top: -30px;
+  }
+  .main-top .news ul {
+    padding: 10px;
+  }
+  .main-top .news ul li {
+    width: 100%;
+  }
+  .main-top .news ul li h3 {
+    margin-top: 0;
+  }
+  .main-top .news .news-big {
+    height: auto;
+  }
+  .main-top .news .news-big img {
+    padding: 0;
+    width: 100px;
+    height: 100px;
+  }
+  .main-top .news .news-big h3 {
+    font-size: 15px;
+  }
+  .main-top .news .news-big h3::after {
+    top: 25px;
+  }
+  .main-top .news .news-small {
+    height: auto;
+  }
+  .main-top .news .news-small img {
+    padding: 0;
+    width: 70px;
+    height: 70px;
+  }
+  .main-top .news .news-small h3 {
+    font-size: 13px;
+  }
+  .main-top .korona {
+    width: 190px;
+    padding: 2px 15px;
+  }
+  .main-top .naka-img {
+    width: 90%;
+  }
+  .main-top .naka-img img {
+    width: 90%;
+    margin: 0;
+    padding: 0;
+  }
+  .service .floor {
+    width: 90%;
+  }
+  .service .floor-li {
+    width: 90%;
+  }
+  .service .floor-li .intro {
+    padding: 0;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .service .floor-li .intro h3 {
+    font-size: 15px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+  .service .floor-li .intro ul {
+    height: 0;
+    padding: 10px 0 5px;
+    width: 100%;
+  }
+  .service .floor-li .intro ul li {
+    font-size: 10px;
+    padding: 3px 5px;
+  }
+  .service .floor-li .intro img {
+    position: static;
+    width: 45%;
+    height: 100%;
+    padding: 5px;
+  }
+  .service .floor-li .intro .intro-text {
+    display: inline;
+    width: 50%;
+    font-size: 10px;
+    line-height: 2;
+    letter-spacing: 1px;
+  }
+  .service .floor-li .intro .intro-detail {
+    width: 200px;
+  }
+  footer {
+    text-align: center;
+  }
+  footer .f-ttl {
+    width: 90px;
+    height: 30px;
+  }
+  footer .follow {
+    display: block;
+    height: auto;
+    padding: 30px 0;
+  }
+  footer .follow::after {
+    position: static;
+  }
+  footer .follow ul {
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .language {
+    display: block;
+    height: 200px;
+  }
+  footer .language ul {
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .language .language-l {
+    position: relative;
+  }
+  footer .language .language-l::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top: 40px;
+  }
+  footer .language .language-r {
+    position: static;
+  }
+  footer .gotop {
+    width: 50px;
+    top: -20px;
+    right: 20px;
+  }
+  footer .gotop svg {
+    width: 50px;
+    height: 50px;
+  }
+  footer .gotop img {
+    width: 16px;
+    height: 16px;
+    left: 17px;
+    top: 17px;
+  }
+}
+
+.z {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 600px;
+}
+
+.z div {
+  width: 300px;
+}
+
+.z .a {
+  background-color: black;
+  height: 50px;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+}
+
+.z .b {
+  background-color: blue;
+  height: 50px;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 2;
+      flex-shrink: 2;
+}
+
+.z .c {
+  background-color: red;
+  height: 50px;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 2;
+      flex-shrink: 2;
+}
+/*# sourceMappingURL=stylesheet.css.map */
